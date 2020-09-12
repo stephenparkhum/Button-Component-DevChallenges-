@@ -1,7 +1,16 @@
+/* GENERAL STYLES */
+
 a button {
     width: 81px; 
     height: 36px;
     margin-bottom: 50px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+    border-radius: 6px;
+    border: none;
 }
 
 a button:hover,
@@ -9,31 +18,29 @@ a button:focus {
     cursor: pointer;
 }
 
-a button.default {
-    background: #E0E0E0;
-    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
-    border-radius: 6px;
-    border: none;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-
-    color: #3F3F3F;
+/* BUTTON SIZES */
+a button.sm {
+    width: 73px;
+    height: 32px;
 }
 
-a button.default:hover, 
-a button.default:focus {
-    background: #AEAEAE;
-
+a button.md {
+    width: 81px;
+    height: 36px;
 }
+
+a button.lg {
+    width: 93px;
+    height: 42px;
+}
+
+/* GENERAL BUTTON TYPES */
 
 a button.outline {
     border: 1px solid #3D5AFE;
     border-radius: 6px; 
     background: #fff;
+    color: #3D5AFE;
 }
 
 a button.outline:hover, 
@@ -46,13 +53,60 @@ a button.text {
     color: #3D5AFE;
     border: none;
     background: none;
-    width: initial; 
-    height: initial;
+    box-shadow: none;
 }
 
 a button.text:hover,
 a button.text:focus {
-    
+    background: rgba(41, 98, 255, 0.1);
+    border-radius: 6px; 
+    cursor: pointer;
 }
 
+a button.color--default {
+    background: #E0E0E0;
+    color: #3F3F3F;
+}
 
+a button.color--default:hover, 
+a button.color--default:focus {
+    background: #AEAEAE;
+}
+
+a button.color--primary, 
+a button.color--secondary, 
+a button.color--danger {
+    color: #fff
+}
+
+/* PRIMARY BUTTON */
+a button.color--primary {
+    background: #2962FF;
+} 
+
+a button.color--primary:hover, 
+a button.color--primary:focus {
+    background: #0039CB;
+}
+
+a button.color--secondary {
+    background: #455A64;
+}
+
+a button.color--secondary:hover, 
+a button.color--secondary:focus {
+    background: #1C313A;
+}
+
+a button.color--danger {
+    background: #D32F2F;
+}
+
+a button.color--danger:hover, 
+a button.color--danger:focus {
+    background: #9A0007;
+}
+
+.disabledShadow {
+    box-shadow: none;
+}
