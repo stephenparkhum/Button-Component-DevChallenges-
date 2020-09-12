@@ -1,0 +1,32 @@
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.App aside {
+  width: 150px;
+  padding: 20px;
+  background-color: grey;
+}
+
+.App h3 {
+  padding: 0; 
+  margin: 0;
+}
+
+.App .NavList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.App main {
+  padding: 20px 50px;
+
+}
+
