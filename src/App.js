@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </ul>
       </aside>
       <main>
-        Main here
+        <Main />
       </main>
     </div>
   );
